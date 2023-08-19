@@ -11,12 +11,13 @@
 body {
 	height: 100svh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
 main {
-	height: 50%;
+	height: 40%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -42,8 +43,8 @@ main {
 }
 
 .score {
-	height: 40%;
-	width: 80%;
+	height: 45%;
+	width: 75%;
 	border-radius: 50%;
 	display: flex;
 	flex-direction: column;
@@ -53,6 +54,7 @@ main {
 
 .score span {
 	font-size: 4em;
+	font-weight: 700;
 	color: white;
 }
 
@@ -63,6 +65,12 @@ main {
 .result > span {
 	font-size: 2em;
 	color: white;
+	font-weight: 700;
+}
+
+.result > p {
+	font-size: 1.3em;
+	color: hsl(241, 100%, 89%);
 }
 
 .attribution {
@@ -71,4 +79,8 @@ main {
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+.summary {
+	width: 50%;
 }
