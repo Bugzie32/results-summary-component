@@ -117,11 +117,17 @@ Any/All feedback is welcomed */
 	background-color: hsl(234, 85%, 45%, 0.1);
 }
 
-.icon_react {
+.icon_react,
+.icon_mem,
+.icon_ver,
+.icon_vis {
 	display: flex;
 }
 
-.icon_react i {
+.icon_react i,
+.icon_mem i,
+.icon_ver i,
+.icon_vis i {
 	padding-top: 3px;
 }
 
@@ -131,7 +137,10 @@ Any/All feedback is welcomed */
 	padding-left: 10%;
 }
 
-.react_score {
+.react_score,
+.mem_score,
+.ver_score,
+.vis_score {
 	display: flex;
 }
 
