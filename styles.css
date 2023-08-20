@@ -17,7 +17,7 @@ body {
 }
 
 main {
-	height: 40%;
+	height: 45%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -46,7 +46,7 @@ main {
 Any/All feedback is welcomed */
 
 .score {
-	height: 50%;
+	height: 45%;
 	width: 75%;
 	border-radius: 50%;
 	display: flex;
@@ -81,12 +81,13 @@ Any/All feedback is welcomed */
 	height: 100%;
 	padding: 5%;
 	border-radius: 0 40px 40px 0;
-	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.13);
+	box-shadow: 10px 10px 50px rgba(118, 138, 226, 0.247);
 }
 
 .summary h3 {
 	font-size: 1.5em;
 	color: hsl(224, 30%, 27%);
+	margin-bottom: 1.5em;
 }
 
 .reaction,
@@ -98,7 +99,7 @@ Any/All feedback is welcomed */
 	justify-content: space-between;
 	padding: 5%;
 	border-radius: 0.5em;
-	margin: 1em 0;
+	margin: 1.1em 0;
 }
 
 .reaction {
@@ -129,12 +130,27 @@ Any/All feedback is welcomed */
 .icon_ver i,
 .icon_vis i {
 	padding-top: 3px;
+	padding-right: 20%;
 }
 
 .icon_react p {
 	color: hsl(0, 100%, 67%, 0.9);
 	font-weight: 700;
-	padding-left: 10%;
+}
+
+.icon_mem p {
+	font-weight: 700;
+	color: hsl(39, 100%, 56%);
+}
+
+.icon_ver p {
+	font-weight: 700;
+	color: hsl(166, 100%, 37%);
+}
+
+.icon_vis p {
+	font-weight: 700;
+	color: hsl(234, 85%, 45%);
 }
 
 .react_score,
@@ -142,6 +158,23 @@ Any/All feedback is welcomed */
 .ver_score,
 .vis_score {
 	display: flex;
+}
+
+.react_score > p,
+.mem_score > p,
+.ver_score > p,
+.vis_score > p {
+	color: hsl(224, 30%, 27%);
+	font-weight: 800;
+	margin-right: 5px;
+}
+
+.react_score p + p,
+.mem_score p + p,
+.ver_score p + p,
+.vis_score p + p {
+	font-weight: 800;
+	color: hsl(224, 30%, 27%, 0.5);
 }
 
 .cont {
@@ -152,15 +185,73 @@ Any/All feedback is welcomed */
 	width: 100%;
 	background-color: hsl(224, 30%, 27%);
 	padding: 1em 3em;
-	margin: 1.5em 0;
+	margin-top: 5em;
 	border-radius: 2em;
 	color: white;
 }
 
+.cont:hover {
+	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
 .attribution {
+	margin-top: 2em;
 	font-size: 11px;
 	text-align: center;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries Start */
+
+@media screen and (max-width: 760px) {
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.result {
+		padding: 5%;
+		border-radius: 40px 40px 0 0;
+	}
+
+	.result h3 {
+		font-size: 1em;
+	}
+
+	.result span {
+		font-size: 1.5em;
+	}
+
+	.result p {
+		font-size: 1em;
+		padding-top: 1em;
+	}
+
+	.score {
+		margin-top: 1em;
+		margin-bottom: 1em;
+		width: 7em;
+		height: 7em;
+	}
+
+	.score span {
+		font-size: 2.5em;
+	}
+
+	.summary {
+		border-radius: 0 0 40px 40px;
+	}
+	.summary h3 {
+		font-size: 1em;
+	}
 }
