@@ -42,6 +42,9 @@ main {
 	font-family: "Hanken Grotesk", sans-serif;
 }
 
+/* Had trouble keeping the round shape of class ".score" while responsive
+Any/All feedback is welcomed */
+
 .score {
 	height: 50%;
 	width: 75%;
